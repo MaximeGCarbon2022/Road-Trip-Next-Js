@@ -1,2 +1,9 @@
-# Road-Trip-Next-Js
-Correction Exercice Recrutement Carbon IT - RoadTrip Planner
+## Getting Started
+
+First, run the development server:
+
+```bash
+pnpm dev
+```
+
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
