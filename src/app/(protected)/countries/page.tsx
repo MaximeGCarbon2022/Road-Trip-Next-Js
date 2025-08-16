@@ -3,7 +3,7 @@ import { getCountriesByName, getCountries } from "@/features/countries/services/
 import { FC } from "react";
 
 interface Props {
-  searchParams: { page?: string; pageSize?: string; name?: string };
+  searchParams: Promise<{ page?: string; pageSize?: string; name?: string }>;
 }
 
 const CountriesPage: FC<Props> = async ({ searchParams }) => {

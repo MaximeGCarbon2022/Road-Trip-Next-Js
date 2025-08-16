@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:coverage:watch": "jest --coverage --watchAll"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",

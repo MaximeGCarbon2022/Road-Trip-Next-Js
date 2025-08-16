@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { FC } from "react";
 
 type Props = {
-  params: { code: string };
+  params: Promise<{ code: string }>;
 };
 
 const CountryDetailPage: FC<Props> = async ({ params }) => {

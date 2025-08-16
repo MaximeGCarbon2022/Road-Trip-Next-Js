@@ -1,5 +1,5 @@
 import type { FC, PropsWithChildren } from "react";
-import "./global.module.scss";
+import "./global.scss";
 import AppProviders from "./AppProviders";
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
