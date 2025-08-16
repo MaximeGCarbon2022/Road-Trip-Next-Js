@@ -1,12 +1,12 @@
 "use client";
 
-import { useConfirmDialog } from "@/shared/hooks/useConfirmDialog";
-import { useToast } from "@/shared/hooks/useToast";
+import { useConfirmDialog } from "@/shared/hooks/confirmDialog/useConfirmDialog";
 import { Box, Button, Link as MuiLink, Paper, Typography } from "@mui/material";
 import NextLink from "next/link";
 import { FC } from "react";
 import { removeFromRoadTripAction } from "../../actions/removeFromRoadTrip";
 import { ConfirmDialog } from "@/shared/components/ConfirmDialog/ConfirmDialog";
+import { useToast } from "@/shared/hooks/toast/useToast";
 
 type Props = { cca3: string };
 

@@ -1,5 +1,5 @@
+import { ToastContextValue } from "@/shared/interfaces/Toast";
 import { createContext, useContext } from "react";
-import { ToastContextValue } from "../interfaces/Toast";
 
 export const ToastContext = createContext<ToastContextValue | undefined>(undefined);
 

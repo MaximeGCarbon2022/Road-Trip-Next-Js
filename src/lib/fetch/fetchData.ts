@@ -1,18 +1,18 @@
 import { cookies } from "next/headers";
-import { ApiError } from "./apiError";
+import { ApiError } from "../apiError";
 
 export async function fetchData<T>(endpoint: string, options?: RequestInit): Promise<T | null> {
   const cookieStore = await cookies();
   const token = cookieStore.get("token")?.value;
 
   const res = await fetch(`http://localhost:3000/api${endpoint}`, {
+    cache: "no-store",
     ...options,
     headers: {
       ...(options?.headers || {}),
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     },
-    cache: "no-store",
   });
 
   if (res.status === 404 || res.status === 204) {

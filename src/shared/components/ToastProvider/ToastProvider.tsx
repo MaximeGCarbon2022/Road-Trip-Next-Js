@@ -1,6 +1,6 @@
 "use client";
 
-import { ToastContext } from "@/shared/hooks/useToast";
+import { ToastContext } from "@/shared/hooks/toast/useToast";
 import { ToastSeverity } from "@/shared/interfaces/Toast";
 import { Alert, Snackbar } from "@mui/material";
 import { PropsWithChildren, useState, type FC } from "react";

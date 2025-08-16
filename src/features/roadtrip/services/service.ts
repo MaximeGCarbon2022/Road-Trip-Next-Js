@@ -1,4 +1,4 @@
-import { fetchData } from "@/lib/fetchData";
+import { fetchData } from "@/lib/fetch/fetchData";
 import { RoadTripWithOrder } from "../interfaces/interface";
 
 export const getRoadTrip = async () => fetchData<RoadTripWithOrder>("/roadtrip");

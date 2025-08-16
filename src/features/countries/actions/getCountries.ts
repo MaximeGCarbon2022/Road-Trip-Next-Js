@@ -1,6 +1,6 @@
 "use server";
 
-import { fetchData } from "@/lib/fetchData";
+import { fetchData } from "@/lib/fetch/fetchData";
 import { PaginatedResult } from "@/shared/interfaces/PaginatedResult";
 import { Country } from "../interfaces/interface";
 

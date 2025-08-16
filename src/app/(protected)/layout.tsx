@@ -1,4 +1,4 @@
-import { requireAuth } from "@/lib/auth";
+import { requireAuth } from "@/lib/auth/auth";
 import { Header } from "@/shared/components/Header/Header";
 import { Box, Container } from "@mui/material";
 import type { FC, PropsWithChildren } from "react";
